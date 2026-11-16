@@ -1,10 +1,3 @@
-"""enable pgvector
-
-Revision ID: 8b7a25112243
-Revises: 
-Create Date: 2026-11-13 17:22:59.837077
-
-"""
 from typing import Sequence, Union
 
 from alembic import op
