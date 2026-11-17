@@ -12,6 +12,8 @@ class Settings(BaseSettings):
     secret_key: str = "change-me"
     algorithm: str = "HS256"
     access_token_expire_minutes: int = 60
+    storage_dir: str = "storage"
+    max_upload_mb: int = 20
 
 
 settings = Settings()
