@@ -9,5 +9,9 @@ class Settings(BaseSettings):
     redis_url: str = "redis://localhost:6379/0"
     ollama_base_url: str = "http://localhost:11434"
 
+    secret_key: str = "change-me"
+    algorithm: str = "HS256"
+    access_token_expire_minutes: int = 60
+
 
 settings = Settings()

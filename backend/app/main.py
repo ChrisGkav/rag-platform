@@ -4,9 +4,10 @@ from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.core.config import settings
 from app.db.session import get_session
+from app.api import auth
 
 app = FastAPI(title=settings.app_name)
-
+app.include_router(auth.router)
 
 @app.get("/health")
 async def health() -> dict[str, str]:
